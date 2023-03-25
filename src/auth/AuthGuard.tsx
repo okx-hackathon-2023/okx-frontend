@@ -1,10 +1,12 @@
 import { useState, ReactNode } from 'react';
 import { Navigate, useLocation } from 'react-router-dom';
 // components
+import {observer} from "mobx-react";
 import LoadingScreen from '../components/loading-screen';
 //
 import Login from '../pages/LoginPage';
 import { useAuthContext } from './useAuthContext';
+import {rootStore} from "../mobX/stores";
 
 // ----------------------------------------------------------------------
 
@@ -12,7 +14,7 @@ type AuthGuardProps = {
   children: ReactNode;
 };
 
-export default function AuthGuard({ children }: AuthGuardProps) {
+function AuthGuard({ children }: AuthGuardProps) {
   const { isAuthenticated, isInitialized } = useAuthContext();
 
   const { pathname } = useLocation();
@@ -23,7 +25,7 @@ export default function AuthGuard({ children }: AuthGuardProps) {
     return <LoadingScreen />;
   }
 
-  if (!isAuthenticated) {
+  if (!rootStore.userStore.isConnectedWallet) {
     if (pathname !== requestedLocation) {
       setRequestedLocation(pathname);
     }
@@ -37,3 +39,5 @@ export default function AuthGuard({ children }: AuthGuardProps) {
 
   return <> {children} </>;
 }
+
+export default observer(AuthGuard);

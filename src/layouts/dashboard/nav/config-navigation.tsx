@@ -17,32 +17,12 @@ const ICONS = {
 };
 
 const navConfig = [
-  // GENERAL
-  // ----------------------------------------------------------------------
   {
-    subheader: 'general v4.3.0',
+    subheader: 'Main menu',
     items: [
-      { title: 'One', path: PATH_DASHBOARD.one, icon: ICONS.dashboard },
-      { title: 'Two', path: PATH_DASHBOARD.two, icon: ICONS.ecommerce },
-      { title: 'Three', path: PATH_DASHBOARD.three, icon: ICONS.analytics },
-    ],
-  },
-
-  // MANAGEMENT
-  // ----------------------------------------------------------------------
-  {
-    subheader: 'management',
-    items: [
-      {
-        title: 'user',
-        path: PATH_DASHBOARD.user.root,
-        icon: ICONS.user,
-        children: [
-          { title: 'Four', path: PATH_DASHBOARD.user.four },
-          { title: 'Five', path: PATH_DASHBOARD.user.five },
-          { title: 'Six', path: PATH_DASHBOARD.user.six },
-        ],
-      },
+      { title: 'Market', path: PATH_DASHBOARD.market, icon: ICONS.dashboard },
+      { title: 'Governance', path: PATH_DASHBOARD.two, icon: ICONS.ecommerce },
+      { title: 'Create Fund', path: PATH_DASHBOARD.three, icon: ICONS.analytics },
     ],
   },
 ];

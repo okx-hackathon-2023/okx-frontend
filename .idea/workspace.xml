@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e06fd27-86b0-4e34-98fa-ba5bdc4107cd" name="Changes" comment="add">
-      <change afterPath="$PROJECT_DIR$/src/mobX/initMobX.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mobX/interfaces/ICloneCreatable.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mobX/interfaces/IFormModel.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mobX/interfaces/ILocalStore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mobX/interfaces/IServerEntity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mobX/interfaces/IWithError.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mobX/stores/RootStore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mobX/stores/UserStore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mobX/stores/index.ts" afterDir="false" />
+    <list default="true" id="3e06fd27-86b0-4e34-98fa-ba5bdc4107cd" name="Changes" comment="connect wallet">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_03_2023__16_51__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/auth/metamask_wallet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/auth/okx_wallet.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/AuthGuard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/AuthGuard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config-global.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config-global.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/dashboard/nav/NavVertical.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/dashboard/nav/NavVertical.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/dashboard/nav/config-navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/dashboard/nav/config-navigation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mobX/stores/UserStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/mobX/stores/UserStore.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/LoginPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LoginPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/auth/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/auth/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/paths.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/paths.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,19 +43,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/semengolovin/Desktop/hacks/okx&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/semengolovin/Desktop/hacks/okx/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "js.linters.configure.manually.selectedeslint": "true",
+    "last_opened_file_path": "/Users/semengolovin/Desktop/hacks/okx",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "actions.on.save",
+    "ts.external.directory.path": "/Users/semengolovin/Desktop/hacks/okx/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -80,5 +86,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="connect wallet" />
+    <option name="LAST_COMMIT_MESSAGE" value="connect wallet" />
   </component>
 </project>
