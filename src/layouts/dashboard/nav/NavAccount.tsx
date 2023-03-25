@@ -5,6 +5,7 @@ import { Box, Typography } from '@mui/material';
 import { useAuthContext } from '../../../auth/useAuthContext';
 // components
 import { CustomAvatar } from '../../../components/custom-avatar';
+import {rootStore} from "../../../mobX/stores";
 
 // ----------------------------------------------------------------------
 
@@ -19,19 +20,14 @@ const StyledRoot = styled('div')(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function NavAccount() {
-  const { user } = useAuthContext();
 
   return (
     <StyledRoot>
-      <CustomAvatar src={user?.photoURL} alt={user?.displayName} name={user?.displayName} />
+      <CustomAvatar src="/assets/images/avatar.png" name={rootStore.userStore.shortAddress} />
 
       <Box sx={{ ml: 2, minWidth: 0 }}>
         <Typography variant="subtitle2" noWrap>
-          {user?.displayName}
-        </Typography>
-
-        <Typography variant="body2" noWrap sx={{ color: 'text.secondary' }}>
-          {user?.role}
+          {rootStore.userStore.shortAddress}
         </Typography>
       </Box>
     </StyledRoot>

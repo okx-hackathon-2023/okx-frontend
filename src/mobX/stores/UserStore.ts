@@ -1,6 +1,10 @@
 import { action, computed, makeObservable, observable } from 'mobx';
-
+// @ts-ignore
+// eslint-disable-next-line import/no-extraneous-dependencies
+import jazzicon from "@metamask/jazzicon"
+// eslint-disable-next-line import/no-extraneous-dependencies
 import Web3 from "web3";
+import {useRef} from "react";
 import { ILocalStore } from '../interfaces';
 
 
@@ -32,6 +36,7 @@ export default class UserStore {
         this._isConnectedWallet = true;
         this._walletAddress = walletAddress;
         this._web3Client = web3;
+
     }
 
     disconnectWallet() {
@@ -45,6 +50,10 @@ export default class UserStore {
 
     get walletAddress() {
         return this._walletAddress;
+    }
+
+    get shortAddress() {
+        return `${this._walletAddress.substring(0, 4)  }....${  this._walletAddress.substring(this._walletAddress.length - 4, this._walletAddress.length)}`
     }
 }
 

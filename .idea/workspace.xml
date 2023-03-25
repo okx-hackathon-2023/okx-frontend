@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e06fd27-86b0-4e34-98fa-ba5bdc4107cd" name="Changes" comment="connect wallet">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_03_2023__16_51__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/auth/metamask_wallet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/auth/okx_wallet.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/AuthGuard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/AuthGuard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config-global.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config-global.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/dashboard/nav/NavAccount.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/dashboard/nav/NavAccount.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/dashboard/nav/NavVertical.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/dashboard/nav/NavVertical.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/dashboard/nav/config-navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/dashboard/nav/config-navigation.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mobX/stores/UserStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/mobX/stores/UserStore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/LoginPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LoginPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/paths.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/paths.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
