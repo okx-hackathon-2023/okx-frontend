@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e06fd27-86b0-4e34-98fa-ba5bdc4107cd" name="Changes" comment="setting mobx, add wallet modal">
-      <change afterPath="$PROJECT_DIR$/src/pages/Market.tsx" afterDir="false" />
+    <list default="true" id="3e06fd27-86b0-4e34-98fa-ba5bdc4107cd" name="Changes" comment="add">
+      <change afterPath="$PROJECT_DIR$/src/mobX/initMobX.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mobX/interfaces/ICloneCreatable.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mobX/interfaces/IFormModel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mobX/interfaces/ILocalStore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mobX/interfaces/IServerEntity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mobX/interfaces/IWithError.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mobX/stores/RootStore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mobX/stores/UserStore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mobX/stores/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/elements.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/elements.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/LoginPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LoginPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/auth/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/auth/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679700001996</updated>
       <workItem from="1679700003147" duration="3997000" />
-      <workItem from="1679704011566" duration="553000" />
+      <workItem from="1679704011566" duration="129000" />
     </task>
     <servers />
   </component>
@@ -70,9 +80,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="setting mobx, add wallet modal" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting mobx, add wallet modal" />
   </component>
 </project>

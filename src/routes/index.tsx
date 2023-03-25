@@ -10,7 +10,7 @@ import { PATH_AFTER_LOGIN } from '../config-global';
 //
 import {
   Page404,
-  Market,
+  PageOne,
   PageTwo,
   PageSix,
   PageFour,
@@ -40,13 +40,24 @@ export default function Router() {
     {
       path: '/dashboard',
       element: (
+        <AuthGuard>
           <DashboardLayout />
+        </AuthGuard>
       ),
       children: [
         { element: <Navigate to={PATH_AFTER_LOGIN} replace />, index: true },
-        { path: 'Market', element: <Market /> },
-        { path: 'Governance', element: <PageTwo /> },
-        { path: 'Create Fund', element: <PageThree /> },
+        { path: 'one', element: <PageOne /> },
+        { path: 'two', element: <PageTwo /> },
+        { path: 'three', element: <PageThree /> },
+        {
+          path: 'user',
+          children: [
+            { element: <Navigate to="/dashboard/user/four" replace />, index: true },
+            { path: 'four', element: <PageFour /> },
+            { path: 'five', element: <PageFive /> },
+            { path: 'six', element: <PageSix /> },
+          ],
+        },
       ],
     },
     {
