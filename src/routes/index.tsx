@@ -10,13 +10,12 @@ import { PATH_AFTER_LOGIN } from '../config-global';
 //
 import {
   Page404,
-  PageOne,
   PageTwo,
   PageSix,
   PageFour,
   PageFive,
   LoginPage,
-  PageThree,
+  PageThree, Market,
 } from './elements';
 
 // ----------------------------------------------------------------------
@@ -46,7 +45,7 @@ export default function Router() {
       ),
       children: [
         { element: <Navigate to={PATH_AFTER_LOGIN} replace />, index: true },
-        { path: 'market', element: <PageOne /> },
+        { path: 'market', element: <Market /> },
         { path: 'governance', element: <PageTwo /> },
         { path: 'createFund', element: <PageThree /> },
       ],
