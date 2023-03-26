@@ -53,13 +53,12 @@ export default function Governance() {
                                     <Typography variant="h5" width={200}>Awesome Pixie Fund</Typography>
                                     <Typography width={100}>TVL: $121,3M</Typography>
                                     <Typography width={150}>Your share: $3,131</Typography>
-                                    <Button variant="contained" onClick={(e) => e.stopPropagation()}>Deposit</Button>
                                 </Stack>
                                 <Stack mt={1} direction="row" spacing={2} justifyContent="space-between" alignItems="center">
                                     <Typography width={200}>Risk profile: High</Typography>
                                     <Typography width={100}>APY: 23%</Typography>
                                     <Typography width={200}>Managing DAO: Pixies</Typography>
-                                    <Button variant="outlined" onClick={(e) => e.stopPropagation()}>Withdraw</Button>
+                                    <Button variant="outlined" onClick={(e) => e.stopPropagation()}>View</Button>
                                 </Stack>
                             </Box>
                         </Card>

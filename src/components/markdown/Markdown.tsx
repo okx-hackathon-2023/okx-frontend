@@ -1,9 +1,15 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
+
 import '../../utils/highlight';
 import { Link as RouterLink } from 'react-router-dom';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import ReactMarkdown from 'react-markdown';
 // markdown plugins
+// eslint-disable-next-line import/no-extraneous-dependencies
 import rehypeRaw from 'rehype-raw';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import remarkGfm from 'remark-gfm';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import rehypeHighlight from 'rehype-highlight';
 // @mui
 import { Link, Typography, Divider } from '@mui/material';
