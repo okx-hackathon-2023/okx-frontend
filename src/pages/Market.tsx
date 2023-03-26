@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 // @mui
-import {Box, Button, Card, Container, Grid, Stack, Typography} from '@mui/material';
+import {Box, Button, Card, CardContent, CardHeader, Container, Grid, Stack, Typography} from '@mui/material';
 // components
 import {useNavigate} from "react-router-dom";
 import { useSettingsContext } from '../components/settings';
@@ -19,30 +19,38 @@ export default function PageOne() {
             </Helmet>
 
             <Container>
-                <Grid container gap={2}>
-                    <Grid xs={12} md={4}>
+                <Grid container spacing={2}>
+                    <Grid xs={12} md={6} item>
                         <Card>
-                            <Stack direction="column" spacing={2} p={4}>
-                                <Typography variant="h3">Market Stats</Typography>
-                                <Typography>Earned: $35,2M    TVL: $534,2M</Typography>
-                                <Typography>Top 1: AwesomePixieFund</Typography>
-                            </Stack>
+                            <CardHeader title="Market Stats" />
+                            <CardContent>
+                                <Stack direction="column">
+                                    <Typography>TVL: $534,2M</Typography>
+                                    <Typography>Top 1: AwesomePixieFund</Typography>
+                                </Stack>
+                            </CardContent>
                         </Card>
                     </Grid>
-                    <Grid xs={12} md={6}>
+                    <Grid xs={12} md={6} item>
                         <Card>
-                            <Stack direction="column" spacing={2} p={4}>
-                                <Typography variant="h3">Portfolio</Typography>
-                                <Typography>Value: $19,415    All time Earned: $1,415</Typography>
-                                <Typography>24H Change:  Up 4%   Unallocated: $10,915</Typography>
-                            </Stack>
+                            <CardHeader title="Portfolio" />
+                            <CardContent>
+                                <Stack direction="row" justifyContent="space-between" spacing={2}>
+                                    <Typography>Value: $19,415</Typography>
+                                    <Typography>All time Earned: $1,415</Typography>
+                                </Stack>
+                                <Stack direction="row" justifyContent="space-between" spacing={2}>
+                                    <Typography>24H Change:  Up 4%</Typography>
+                                    <Typography>Unallocated: $10,915</Typography>
+                                </Stack>
+                            </CardContent>
                         </Card>
                     </Grid>
 
 
-                    <Grid xs={12}>
+                    <Grid xs={12} item>
                         <Card>
-                            <Typography variant="h3" pt={4} pl={4}>Funds</Typography>
+                            <CardHeader title="Funds" />
 
                             <Box
                                 p={4}
@@ -52,6 +60,7 @@ export default function PageOne() {
                                 }}
                                 sx={{
                                     '&:hover': {
+                                        cursor: 'pointer',
                                         opacity: 0.5
                                     }
                                 }}

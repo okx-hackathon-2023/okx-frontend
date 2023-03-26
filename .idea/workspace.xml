@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e06fd27-86b0-4e34-98fa-ba5bdc4107cd" name="Changes" comment="graphic, some change fund">
+    <list default="true" id="3e06fd27-86b0-4e34-98fa-ba5bdc4107cd" name="Changes" comment="finish fund">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/dashboard/header/AccountPopover.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/dashboard/header/AccountPopover.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/dashboard/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/dashboard/header/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Fund.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Fund.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Market.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Market.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +94,7 @@
     <MESSAGE value="Add Stats" />
     <MESSAGE value="add list funds" />
     <MESSAGE value="graphic, some change fund" />
-    <option name="LAST_COMMIT_MESSAGE" value="graphic, some change fund" />
+    <MESSAGE value="finish fund" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish fund" />
   </component>
 </project>

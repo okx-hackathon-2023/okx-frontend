@@ -120,10 +120,10 @@ export default function Fund() {
                                     <Table sx={{ minWidth: 650 }} aria-label="simple table">
                                         <TableHead>
                                             <TableRow>
-                                                <TableCell align="right">Asset</TableCell>
-                                                <TableCell align="right">Amount</TableCell>
-                                                <TableCell align="right">Value</TableCell>
-                                                <TableCell align="right">State</TableCell>
+                                                <TableCell align="left">Asset</TableCell>
+                                                <TableCell align="left">Amount</TableCell>
+                                                <TableCell align="left">Value</TableCell>
+                                                <TableCell align="left">State</TableCell>
                                             </TableRow>
                                         </TableHead>
                                         <TableBody>
@@ -132,12 +132,12 @@ export default function Fund() {
                                                     key={i}
                                                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                                 >
-                                                    <TableCell align="right">{row.asset}</TableCell>
-                                                    <TableCell component="th" scope="row">
+                                                    <TableCell align="left">{row.asset}</TableCell>
+                                                    <TableCell align="left">
                                                         {row.amount}
                                                     </TableCell>
-                                                    <TableCell align="right">{row.value}</TableCell>
-                                                    <TableCell align="right">{row.state}</TableCell>
+                                                    <TableCell align="left">{row.value}</TableCell>
+                                                    <TableCell align="left">{row.state}</TableCell>
                                                 </TableRow>
                                             ))}
                                         </TableBody>

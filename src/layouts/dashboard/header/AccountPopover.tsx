@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { alpha } from '@mui/material/styles';
 import { Box, Divider, Typography, Stack, MenuItem } from '@mui/material';
 // routes
+import {observer} from "mobx-react";
 import { PATH_AUTH } from '../../../routes/paths';
 // auth
 import { useAuthContext } from '../../../auth/useAuthContext';
@@ -12,6 +13,7 @@ import { CustomAvatar } from '../../../components/custom-avatar';
 import { useSnackbar } from '../../../components/snackbar';
 import MenuPopover from '../../../components/menu-popover';
 import { IconButtonAnimate } from '../../../components/animate';
+import {rootStore} from "../../../mobX/stores";
 
 // ----------------------------------------------------------------------
 
@@ -31,8 +33,7 @@ const OPTIONS = [
 ];
 
 // ----------------------------------------------------------------------
-
-export default function AccountPopover() {
+ function AccountPopover() {
   const navigate = useNavigate();
 
   const { user, logout } = useAuthContext();
@@ -84,18 +85,18 @@ export default function AccountPopover() {
           }),
         }}
       >
-        <CustomAvatar src={user?.photoURL} alt={user?.displayName} name={user?.displayName} />
+        <CustomAvatar src="/assets/images/avatar.png" alt={user?.displayName} name={rootStore.userStore.walletAddress} />
       </IconButtonAnimate>
 
       <MenuPopover open={openPopover} onClose={handleClosePopover} sx={{ width: 200, p: 0 }}>
         <Box sx={{ my: 1.5, px: 2.5 }}>
           <Typography variant="subtitle2" noWrap>
-            {user?.displayName}
+            {rootStore.userStore.shortAddress}
           </Typography>
 
-          <Typography variant="body2" sx={{ color: 'text.secondary' }} noWrap>
-            {user?.email}
-          </Typography>
+          {/* <Typography variant="body2" sx={{ color: 'text.secondary' }} noWrap> */}
+          {/*  {user?.email} */}
+          {/* </Typography> */}
         </Box>
 
         <Divider sx={{ borderStyle: 'dashed' }} />
@@ -117,3 +118,5 @@ export default function AccountPopover() {
     </>
   );
 }
+
+export default observer(AccountPopover);
