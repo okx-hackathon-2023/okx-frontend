@@ -13,7 +13,7 @@ import {
   Governance,
   Fund,
   LoginPage,
-  PageThree, Market,
+  PageThree, Market, Proposal,
 } from './elements';
 
 // ----------------------------------------------------------------------
@@ -52,6 +52,10 @@ export default function Router() {
           element: <Fund />,
         },
         { path: 'governance', element: <Governance /> },
+        {
+          path: 'proposal/:id',
+          element: <Proposal />
+        },
         { path: 'createFund', element: <PageThree /> },
       ],
     },

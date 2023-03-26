@@ -34,7 +34,7 @@ export default function Governance() {
 
                     <Grid xs={12} item>
                         <Card>
-                            <CardHeader title="Funds" />
+                            <CardHeader title="Proposals" />
 
                             <Box
                                 p={4}
@@ -49,7 +49,9 @@ export default function Governance() {
                                     <Typography width={200}>Risk profile: High</Typography>
                                     <Typography width={100}>APY: 23%</Typography>
                                     <Typography width={200}>Managing DAO: Pixies</Typography>
-                                    <Button variant="outlined" onClick={(e) => e.stopPropagation()}>View</Button>
+                                    <Button variant="outlined" onClick={() => {
+                                        nav('/dashboard/proposal/1')
+                                    }}>View</Button>
                                 </Stack>
                             </Box>
                         </Card>

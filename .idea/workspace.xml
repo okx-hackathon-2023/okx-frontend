@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e06fd27-86b0-4e34-98fa-ba5bdc4107cd" name="Changes" comment="Governance">
+    <list default="true" id="3e06fd27-86b0-4e34-98fa-ba5bdc4107cd" name="Changes" comment="fix governance">
+      <change afterPath="$PROJECT_DIR$/src/pages/Proposal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/ProposalRebalance.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sections/proposal/ChartPie.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Governance.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Governance.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/elements.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/elements.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="tsconfig.json" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -95,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679833121272</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix governance">
+      <created>1679838056923</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679838056923</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +136,7 @@
     <MESSAGE value="add dockerfile" />
     <MESSAGE value="fix version" />
     <MESSAGE value="Governance" />
-    <option name="LAST_COMMIT_MESSAGE" value="Governance" />
+    <MESSAGE value="fix governance" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix governance" />
   </component>
 </project>
