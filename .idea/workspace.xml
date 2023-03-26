@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e06fd27-86b0-4e34-98fa-ba5bdc4107cd" name="Changes" comment="add dockerfile">
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    <list default="true" id="3e06fd27-86b0-4e34-98fa-ba5bdc4107cd" name="Changes" comment="fix version">
+      <change afterPath="$PROJECT_DIR$/src/pages/Governance.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/elements.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/elements.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679831385557</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix version">
+      <created>1679831408986</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679831408986</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +117,7 @@
     <MESSAGE value="finish fund" />
     <MESSAGE value="some fix, clear code" />
     <MESSAGE value="add dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dockerfile" />
+    <MESSAGE value="fix version" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix version" />
   </component>
 </project>

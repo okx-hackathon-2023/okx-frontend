@@ -10,10 +10,8 @@ import { PATH_AFTER_LOGIN } from '../config-global';
 //
 import {
   Page404,
-  PageTwo,
+  Governance,
   Fund,
-  PageFour,
-  PageFive,
   LoginPage,
   PageThree, Market,
 } from './elements';
@@ -53,7 +51,7 @@ export default function Router() {
           path: 'fund/:id',
           element: <Fund />,
         },
-        { path: 'governance', element: <PageTwo /> },
+        { path: 'governance', element: <Governance /> },
         { path: 'createFund', element: <PageThree /> },
       ],
     },

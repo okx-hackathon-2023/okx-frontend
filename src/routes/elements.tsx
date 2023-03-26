@@ -17,7 +17,7 @@ export const LoginPage = Loadable(lazy(() => import('../pages/LoginPage')));
 
 export const Market = Loadable(lazy(() => import('../pages/Market')));
 export const Fund = Loadable(lazy(() => import("../pages/Fund")));
-export const PageTwo = Loadable(lazy(() => import('../pages/PageTwo')));
+export const Governance = Loadable(lazy(() => import('../pages/Governance')));
 export const PageThree = Loadable(lazy(() => import('../pages/PageThree')));
 export const PageFour = Loadable(lazy(() => import('../pages/PageFour')));
 export const PageFive = Loadable(lazy(() => import('../pages/PageFive')));
