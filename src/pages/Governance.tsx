@@ -39,15 +39,6 @@ export default function Governance() {
                             <Box
                                 p={4}
                                 component="div"
-                                onClick={() => {
-                                    nav('/dashboard/fund/1')
-                                }}
-                                sx={{
-                                    '&:hover': {
-                                        cursor: 'pointer',
-                                        opacity: 0.5
-                                    }
-                                }}
                             >
                                 <Stack direction="row" spacing={2} justifyContent="space-between" alignItems="center">
                                     <Typography variant="h5" width={200}>Awesome Pixie Fund</Typography>

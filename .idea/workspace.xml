@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e06fd27-86b0-4e34-98fa-ba5bdc4107cd" name="Changes" comment="Governance">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/markdown/Markdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/markdown/Markdown.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Governance.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Governance.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/highlight.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/highlight.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
