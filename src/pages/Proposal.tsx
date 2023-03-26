@@ -100,7 +100,18 @@ export default function Proposal() {
                     <Grid xs={12} md={12} item>
                         <Card>
                             <CardContent>
-                                <Markdown children="<h3>Proposal Header</h3>  Very very very  very very very very very very very very very very very very many text" />
+                                <Markdown children="
+                                <h3>Proposal Header</h3>
+                                As a crypto enthusiast, I propose to exclude SaveFi from the pool of allowed applications for investment due to its suspected malicious behavior. SaveFi has been under scrutiny for its unethical practices and has been accused of exploiting its users. <br /><br />
+
+SaveFi claims to offer a decentralized finance platform that allows users to earn interest on their crypto investments. However, recent investigations have revealed that the platform is not as decentralized as it claims to be. The platform's team has complete control over user funds and can manipulate the interest rates to their advantage.<br /><br />
+
+Furthermore, several reports have surfaced, highlighting SaveFi's involvement in illegal activities such as money laundering and insider trading. The platform has also been accused of using user funds to finance its own operations.<br /><br />
+
+Given the above facts, it is imperative that we exclude SaveFi from the list of allowed applications for investment. Allowing such a platform to operate within the crypto space would be detrimental to the entire community.<br /><br />
+
+Therefore, I urge all stakeholders to support this proposal and take necessary actions to prevent SaveFi from continuing its malicious activities.
+                                " />
                             </CardContent>
                         </Card>
                     </Grid>
