@@ -21,8 +21,8 @@ const navConfig = [
     subheader: 'Main menu',
     items: [
       { title: 'Market', path: PATH_DASHBOARD.market, icon: ICONS.dashboard },
-      { title: 'Governance', path: PATH_DASHBOARD.two, icon: ICONS.ecommerce },
-      { title: 'Create Fund', path: PATH_DASHBOARD.three, icon: ICONS.analytics },
+      { title: 'Governance', path: PATH_DASHBOARD.governance, icon: ICONS.ecommerce },
+      { title: 'Create Fund', path: PATH_DASHBOARD.createFund, icon: ICONS.analytics },
     ],
   },
 ];

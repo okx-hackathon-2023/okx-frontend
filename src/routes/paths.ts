@@ -15,6 +15,6 @@ export const PATH_AUTH = {
 export const PATH_DASHBOARD = {
   root: ROOTS_DASHBOARD,
   market: path(ROOTS_DASHBOARD, '/market'),
-  two: path(ROOTS_DASHBOARD, '/governance'),
-  three: path(ROOTS_DASHBOARD, '/createFund'),
+  governance: path(ROOTS_DASHBOARD, '/governance'),
+  createFund: path(ROOTS_DASHBOARD, '/createFund'),
 };

@@ -2,12 +2,14 @@ import { Helmet } from 'react-helmet-async';
 // @mui
 import {Box, Button, Card, Container, Grid, Stack, Typography} from '@mui/material';
 // components
+import {useNavigate} from "react-router-dom";
 import { useSettingsContext } from '../components/settings';
 import AppWidgetSummary from "../sections/market/AppWidgetSummary";
 
 // ----------------------------------------------------------------------
 
 export default function PageOne() {
+    const nav = useNavigate();
     const { themeStretch } = useSettingsContext();
 
     return (
@@ -44,8 +46,12 @@ export default function PageOne() {
 
                             <Box
                                 p={4}
+                                component="div"
+                                onClick={() => {
+                                    nav('/dashboard/fund/1')
+                                }}
                                 sx={{
-                                    ':hover': {
+                                    '&:hover': {
                                         opacity: 0.5
                                     }
                                 }}
