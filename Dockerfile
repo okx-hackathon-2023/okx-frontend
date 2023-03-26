@@ -1,4 +1,4 @@
-ARG NODE_IMAGE=node:16.13.0
+ARG NODE_IMAGE=node:18.15.0
 ARG NGINX_IMAGE=nginx:alpine
 
 FROM ${NODE_IMAGE} as frontend_builder
